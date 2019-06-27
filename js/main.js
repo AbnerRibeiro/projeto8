@@ -19,5 +19,9 @@ $(document).ready(function(){
 
 	inputBotao.click(function(){
 		let nome = inputNome.val();	
+		navbar.html(`
+			<img src="${dados.avatar_url}" class="avatar d-inline-block align-top">
+			${nome}
+		`)
 	})
 });
