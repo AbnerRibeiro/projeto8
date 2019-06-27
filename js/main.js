@@ -1,10 +1,23 @@
 $(document).ready(function(){
-	$('button').click(function(){
-		$('.navbar-brand').html(`
+
+	let botao = $('button');
+	let navbar = $('.navbar-brand');
+	let corNav = $('nav');
+    let bio = $('#bio');
+	let inputNome = $('#nome');
+	let inputBotao = $('#input-button');
+	botao.click(function(){
+		navbar.html(`
 		<img src="${dados.avatar_url}" class="avatar d-inline-block align-top">
 		${dados.name}
 		`);
-		$(".navbar-brand"). addClass("d-flex align-items-center");
-		$('nav').toggleClass('trocar-cor bg-danger');
+		navbar.addClass('d-flex align-items-center')
+		corNav.toggleClass('trocar-cor bg-danger');
+       
+        bio.html(`${dados.bio}`);
 	});
+
+	inputBotao.click(function(){
+		let nome = inputNome.val();	
+	})
 });

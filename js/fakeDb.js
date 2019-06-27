@@ -23,7 +23,7 @@ var dados = {
   "location": null,
   "email": null,
   "hireable": null,
-  "bio": null,
+  "bio": "melhor advogado",
   "public_repos": 7,
   "public_gists": 0,
   "followers": 3,
